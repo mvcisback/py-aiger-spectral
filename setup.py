@@ -13,6 +13,7 @@ setup(
     license='MIT',
     install_requires=[
         'py-aiger',
+        'py-aiger-bdd'
     ],
     packages=find_packages(),
 )
