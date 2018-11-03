@@ -1,5 +1,14 @@
 # py-aiger-spectral
 
+This library is a tool for performing (Fourier) Analysis of Boolean
+Functions. `py-aiger-spectral` is built on the
+[py-aiger](github.com/mvcisback/py-aiger) sequential circuit
+library/ecosystem.
+
+For an excellent introduction to the theory behind this library, I
+highly recommend Ryan O'Donnell's book, [Analysis of Boolean
+Functions](http://www.contrib.andrew.cmu.edu/~ryanod/).
+
 # Usage
 ```python
 import aiger
