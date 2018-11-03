@@ -70,10 +70,10 @@ def convolve(expr1, expr2):
 if __name__ == '__main__':
     x = aiger.atom('x')
     y = aiger.atom('y')
-    z = aiger.atom('z')
-    expr = x.implies(y) & x | z
+    expr = x.implies(y) & x
     print(list(coeffs(expr)))
+    print(list(weights(expr)))
     print(sum(weights(expr)))
     print(mean(expr))
     print(variance(expr))
-    print(covariance(expr, expr))
+    print(covariance(expr, x ^ y))
